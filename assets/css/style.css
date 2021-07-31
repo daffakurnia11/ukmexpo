@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 .pink-button {
   background-color: #fee4e3;
   border-radius: 2rem;
@@ -317,6 +319,168 @@
   }
 }
 
+.pink-button {
+  background-color: #fee4e3;
+  border-radius: 2rem;
+  padding: 0.5rem 1.25rem;
+  color: #6e35c3;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pink-button:hover {
+  color: #6e35c3;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.purple-button {
+  background-color: #6e35c3;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.purple-button:hover {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#ukm-detail {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fdd4ca), color-stop(20%, #ffb9a8), color-stop(#6b5099), to(#5b1eb3));
+  background: linear-gradient(to bottom, #fdd4ca 10%, #ffb9a8 20%, #6b5099, #5b1eb3);
+  overflow-x: hidden;
+}
+
+#ukm-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+#ukm-content .ukm-name {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+#ukm-content .ukm-name .fas {
+  cursor: pointer;
+  color: #a98dec;
+}
+
+#ukm-content .detail {
+  padding-top: 0.75rem;
+}
+
+#ukm-content .detail-logo {
+  width: 225px;
+  height: 225px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  margin: 0 auto 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid #e8acbc;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#ukm-content .detail-logo img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#ukm-content .detail-name {
+  background: -webkit-gradient(linear, left top, right top, from(#7a5b9b), to(#e4a6a644));
+  background: linear-gradient(to right, #7a5b9b, #e4a6a644);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 3.5rem;
+  border-radius: 2rem;
+}
+
+#ukm-content .detail-body {
+  margin-top: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  min-height: 450px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  border-radius: 1.25rem;
+  border: 1px solid #e2a9c1;
+}
+
+#ukm-content .detail-title {
+  font-size: 1rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: #6e35c3;
+  padding: 0.75rem 2rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+#ukm-content .detail-question {
+  padding: 0.75rem 0.5rem 0.75rem 1.5rem;
+  font-size: 0.8rem;
+}
+
+#ukm-content .detail .accordion-item {
+  margin-top: 0.5rem;
+  border-radius: 1.5rem;
+  background-color: #e3e5e756;
+  border: none;
+}
+
+#ukm-content .detail .accordion-item .accordion-button {
+  font-size: 0.8rem;
+  border: none;
+  background-color: white;
+  border-radius: 1.5rem;
+  color: #6e35c3;
+}
+
+#ukm-content .detail .accordion-item .accordion-body {
+  font-size: 0.8rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #ukm-content .detail-body {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -391,6 +555,10 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.25rem;
+}
+
+.navbar-toggler {
+  color: #a98dec;
 }
 
 .navbar-nav .nav-link {

@@ -53,6 +53,13 @@ $bg-ukm-categories: linear-gradient(
   #624a98 50%,
   #5b1eb3
 );
+$bg-ukm-detail: linear-gradient(
+  to bottom,
+  $navbar-color 10%,
+  #ffb9a8 20%,
+  #6b5099,
+  #5b1eb3
+);
 
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");

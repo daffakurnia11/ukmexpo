@@ -1,0 +1,134 @@
+@import "variables";
+@import "mixin";
+
+.pink-button {
+  background-color: $primary-pink;
+  border-radius: 2rem;
+  padding: 0.5rem 1.25rem;
+  color: $primary-purple;
+  font-size: 1rem;
+  font-weight: 700;
+  &:hover {
+    color: $primary-purple;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+.purple-button {
+  background-color: $primary-purple;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  color: $primary-white;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  &:hover {
+    color: $primary-white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+#ukm-detail {
+  background: $bg-ukm-detail;
+  overflow-x: hidden;
+}
+
+#ukm-content {
+  @include full-viewpage(85vh);
+  padding-top: 1rem;
+  justify-content: unset;
+  .ukm-name {
+    color: $primary-white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    .fas {
+      cursor: pointer;
+      color: $secondary-purple;
+    }
+  }
+  .detail {
+    padding-top: 0.75rem;
+    &-logo {
+      width: 225px;
+      height: 225px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      );
+      margin: 0 auto 1.5rem;
+      border-radius: 1.25rem;
+      border: 1px solid #e8acbc;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+      display: flex;
+      img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    &-name {
+      background: linear-gradient(to right, #7a5b9b, #e4a6a644);
+      width: min-content;
+      color: $primary-white;
+      font-size: 1.5rem;
+      padding: 0.75rem 3.5rem;
+      border-radius: 2rem;
+    }
+    &-body {
+      margin-top: 1.5rem;
+      padding: 1.5rem 2.5rem;
+      width: 100%;
+      min-height: 450px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      );
+      border-radius: 1.25rem;
+      border: 1px solid #e2a9c1;
+    }
+    &-title {
+      font-size: 1rem;
+      width: min-content;
+      color: $primary-purple;
+      padding: 0.75rem 2rem;
+      background-color: $primary-white;
+      border-radius: 2rem;
+    }
+    &-question {
+      padding: 0.75rem 0.5rem 0.75rem 1.5rem;
+      font-size: 0.8rem;
+    }
+    .accordion-item {
+      $border-radius: 1.5rem;
+      margin-top: 0.5rem;
+      border-radius: $border-radius;
+      background-color: #e3e5e756;
+      border: none;
+      .accordion-button {
+        font-size: 0.8rem;
+        border: none;
+        background-color: $primary-white;
+        border-radius: $border-radius;
+        color: $primary-purple;
+      }
+      .accordion-body {
+        font-size: 0.8rem;
+        color: $primary-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ukm-content {
+    .detail {
+      &-body {
+        min-height: fit-content;
+      }
+    }
+  }
+}
