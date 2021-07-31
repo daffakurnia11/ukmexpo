@@ -19,6 +19,29 @@ $(document).ready(function () {
       }
     }
   })
+  $('#sportTrigger').on('click', function () {
+    $('#ukm-list').css('display', 'block');
+    $('.ukm-content').css('display', 'none');
+    $('#ukmSport').css('display', 'block');
+  })
+  $('#otherTrigger').on('click', function () {
+    $('#ukm-list').css('display', 'block');
+    $('.ukm-content').css('display', 'none');
+    $('#ukmOther').css('display', 'block');
+  })
+  $('#artTrigger').on('click', function () {
+    $('#ukm-list').css('display', 'block');
+    $('.ukm-content').css('display', 'none');
+    $('#ukmArt').css('display', 'block');
+  })
+  $('#defenseTrigger').on('click', function () {
+    $('#ukm-list').css('display', 'block');
+    $('.ukm-content').css('display', 'none');
+    $('#ukmDefense').css('display', 'block');
+  })
+  $('.scrollToTop').on('click', function () {
+    $(window).scrollTop(0);
+  })
 });
 
 var imgIndex = 1;

@@ -1,0 +1,58 @@
+$primary-purple: #6e35c3;
+$secondary-purple: #a98dec;
+
+$primary-pink: #fee4e3;
+$secondary-pink: #b988a1;
+
+$primary-white: white;
+
+$primary-orange: #f28852;
+$secondary-orange: #ffd0c6;
+
+$navbar-color: #fdd4ca;
+
+$comfortaa-font: "Comfortaa", cursive;
+$nunito-font: "Nunito", sans-serif;
+
+$bg-main: linear-gradient(
+  to bottom,
+  #fdd4ca 5%,
+  #fcbfb1,
+  #e3afda,
+  #bd7eef 20%,
+  #bd7eef 50%,
+  #9b83fa 70%,
+  #6d4ded 90%,
+  #5a1cb2 100%
+);
+$bg-main-768: linear-gradient(
+  to bottom,
+  #fdd4ca 3%,
+  #fcbfb1,
+  #e3afda,
+  #bd7eef 16%,
+  #bd7eef 40%,
+  #9b83fa 60%,
+  #6d4ded 80%,
+  #5a1cb2 100%
+);
+$bg-main-576: linear-gradient(
+  to bottom,
+  #fdd4ca 3%,
+  #fcbfb1,
+  #e3afda,
+  #bd7eef 14%,
+  #bd7eef 30%,
+  #9b83fa 50%,
+  #6d4ded 80%,
+  #5a1cb2 100%
+);
+$bg-ukm-categories: linear-gradient(
+  to bottom,
+  $navbar-color 10%,
+  #624a98 50%,
+  #5b1eb3
+);
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
