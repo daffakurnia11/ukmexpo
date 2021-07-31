@@ -23,6 +23,8 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fdd4ca), color-stop(50%, #624a98), to(#5b1eb3));
   background: linear-gradient(to bottom, #fdd4ca 10%, #624a98 50%, #5b1eb3);
   overflow-x: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #ukm-category {
@@ -30,6 +32,8 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #ukm-category .categories {
