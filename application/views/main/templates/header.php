@@ -1,3 +1,6 @@
+<?php
+date_default_timezone_set("Asia/Jakarta");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="<?= base_url('assets/dist/'); ?>fontawesome-free/css/all.min.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>style.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>style.css?modified=<?= date("Ymd-His"); ?>">
   <link rel="shortcut icon" href="<?= base_url('assets/img/'); ?>logo/logo.png" type="image/x-icon">
 
   <title>UKM EXPO 2021</title>

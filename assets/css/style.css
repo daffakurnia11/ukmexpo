@@ -356,8 +356,8 @@
 }
 
 #ukm-detail {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fdd4ca), color-stop(20%, #ffb9a8), color-stop(#6b5099), to(#5b1eb3));
-  background: linear-gradient(to bottom, #fdd4ca 10%, #ffb9a8 20%, #6b5099, #5b1eb3);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fdd4ca), color-stop(#ffb9a8), color-stop(#6b5099), color-stop(#624a98), to(#5b1eb3));
+  background: linear-gradient(to bottom, #fdd4ca 10%, #ffb9a8, #6b5099, #624a98, #5b1eb3);
   overflow-x: hidden;
 }
 
@@ -400,6 +400,7 @@
 }
 
 #ukm-content .detail-logo {
+  padding: 1rem;
   width: 225px;
   height: 225px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
@@ -422,9 +423,9 @@
 #ukm-content .detail-name {
   background: -webkit-gradient(linear, left top, right top, from(#7a5b9b), to(#e4a6a644));
   background: linear-gradient(to right, #7a5b9b, #e4a6a644);
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: white;
   font-size: 1.5rem;
   padding: 0.75rem 3.5rem;
@@ -533,8 +534,8 @@ p {
 }
 
 #main {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fdd4ca), color-stop(#fcbfb1), color-stop(#e3afda), color-stop(20%, #bd7eef), color-stop(50%, #bd7eef), color-stop(70%, #9b83fa), color-stop(90%, #6d4ded), to(#5a1cb2));
-  background: linear-gradient(to bottom, #fdd4ca 5%, #fcbfb1, #e3afda, #bd7eef 20%, #bd7eef 50%, #9b83fa 70%, #6d4ded 90%, #5a1cb2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fdd4ca), color-stop(15%, #e3afda), color-stop(25%, #bd7eef), color-stop(30%, #be7fef), color-stop(50%, #9983fa), color-stop(70%, #6d4ded), color-stop(85%, #5b1eb3));
+  background: linear-gradient(to bottom, #fdd4ca 5%, #e3afda 15%, #bd7eef 25%, #be7fef 30%, #9983fa 50%, #6d4ded 70%, #5b1eb3 85%);
 }
 
 .navbar {
@@ -1253,8 +1254,8 @@ footer .footer-contact .contact-link .contact-logo i {
     font-size: 14px;
   }
   #main {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fdd4ca), color-stop(#fcbfb1), color-stop(#e3afda), color-stop(16%, #bd7eef), color-stop(40%, #bd7eef), color-stop(60%, #9b83fa), color-stop(80%, #6d4ded), to(#5a1cb2));
-    background: linear-gradient(to bottom, #fdd4ca 3%, #fcbfb1, #e3afda, #bd7eef 16%, #bd7eef 40%, #9b83fa 60%, #6d4ded 80%, #5a1cb2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fdd4ca), color-stop(10%, #e3afda), color-stop(25%, #bd7eef), color-stop(30%, #be7fef), color-stop(50%, #9983fa), color-stop(70%, #6d4ded), color-stop(85%, #5b1eb3));
+    background: linear-gradient(to bottom, #fdd4ca 5%, #e3afda 10%, #bd7eef 25%, #be7fef 30%, #9983fa 50%, #6d4ded 70%, #5b1eb3 85%);
   }
   #header .bg-header {
     width: 100%;
@@ -1290,8 +1291,8 @@ footer .footer-contact .contact-link .contact-logo i {
 
 @media screen and (max-width: 576px) {
   #main {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fdd4ca), color-stop(#fcbfb1), color-stop(#e3afda), color-stop(14%, #bd7eef), color-stop(30%, #bd7eef), color-stop(50%, #9b83fa), color-stop(80%, #6d4ded), to(#5a1cb2));
-    background: linear-gradient(to bottom, #fdd4ca 3%, #fcbfb1, #e3afda, #bd7eef 14%, #bd7eef 30%, #9b83fa 50%, #6d4ded 80%, #5a1cb2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fdd4ca), color-stop(10%, #e3afda), color-stop(25%, #bd7eef), color-stop(30%, #be7fef), color-stop(50%, #9983fa), color-stop(70%, #6d4ded), color-stop(85%, #5b1eb3));
+    background: linear-gradient(to bottom, #fdd4ca 5%, #e3afda 10%, #bd7eef 25%, #be7fef 30%, #9983fa 50%, #6d4ded 70%, #5b1eb3 85%);
   }
   #header .header-intro {
     font-size: 1.15rem;

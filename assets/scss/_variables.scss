@@ -15,50 +15,48 @@ $comfortaa-font: "Comfortaa", cursive;
 $nunito-font: "Nunito", sans-serif;
 
 $bg-main: linear-gradient(
-  to bottom,
-  #fdd4ca 5%,
-  #fcbfb1,
-  #e3afda,
-  #bd7eef 20%,
-  #bd7eef 50%,
-  #9b83fa 70%,
-  #6d4ded 90%,
-  #5a1cb2 100%
+	to bottom,
+	#fdd4ca 5%,
+	#e3afda 15%,
+	#bd7eef 25%,
+	#be7fef 30%,
+	#9983fa 50%,
+	#6d4ded 70%,
+	#5b1eb3 85%
 );
 $bg-main-768: linear-gradient(
-  to bottom,
-  #fdd4ca 3%,
-  #fcbfb1,
-  #e3afda,
-  #bd7eef 16%,
-  #bd7eef 40%,
-  #9b83fa 60%,
-  #6d4ded 80%,
-  #5a1cb2 100%
+	to bottom,
+	#fdd4ca 5%,
+	#e3afda 10%,
+	#bd7eef 25%,
+	#be7fef 30%,
+	#9983fa 50%,
+	#6d4ded 70%,
+	#5b1eb3 85%
 );
 $bg-main-576: linear-gradient(
-  to bottom,
-  #fdd4ca 3%,
-  #fcbfb1,
-  #e3afda,
-  #bd7eef 14%,
-  #bd7eef 30%,
-  #9b83fa 50%,
-  #6d4ded 80%,
-  #5a1cb2 100%
+	to bottom,
+	#fdd4ca 5%,
+	#e3afda 10%,
+	#bd7eef 25%,
+	#be7fef 30%,
+	#9983fa 50%,
+	#6d4ded 70%,
+	#5b1eb3 85%
 );
 $bg-ukm-categories: linear-gradient(
-  to bottom,
-  $navbar-color 10%,
-  #624a98 50%,
-  #5b1eb3
+	to bottom,
+	$navbar-color 10%,
+	#624a98 50%,
+	#5b1eb3
 );
 $bg-ukm-detail: linear-gradient(
-  to bottom,
-  $navbar-color 10%,
-  #ffb9a8 20%,
-  #6b5099,
-  #5b1eb3
+	to bottom,
+	$navbar-color 10%,
+	#ffb9a8,
+	#6b5099,
+	#624a98,
+	#5b1eb3
 );
 
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
