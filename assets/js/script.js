@@ -1,3 +1,8 @@
+AOS.refresh();
+AOS.init({
+  once: true
+})
+
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     loop: true,

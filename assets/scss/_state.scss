@@ -1,0 +1,143 @@
+@import "variables";
+@import "mixin";
+
+#state {
+	background: linear-gradient(to bottom, #fdd4ca, #fcc1b4 40%, #d39be4);
+	min-height: 100vh;
+	position: relative;
+	.state-body {
+		@include full-viewpage(85vh);
+		h1.state-title {
+			font-family: $nunito_font;
+			color: $secondary_purple;
+			font-size: 3.5rem;
+			font-weight: 900;
+			margin: 2rem auto;
+		}
+		h2.state-title {
+			font-family: $nunito_font;
+			color: $secondary_purple;
+			font-size: 2.5rem;
+			font-weight: 900;
+			margin: 2rem auto 0;
+			.state-404 {
+				font-size: 7.5rem;
+			}
+		}
+		.state-logo-brand {
+			max-width: 200px;
+		}
+		.state-link {
+			background: transparent;
+			border: none;
+			color: $secondary_purple;
+			font-size: 1.25rem;
+			font-weight: 700;
+		}
+	}
+	.state-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: -1;
+		img:nth-of-type(1) {
+			opacity: 0;
+			position: absolute;
+			top: -35%;
+			right: -15%;
+			animation: fade 4s forwards, spin 10s linear infinite;
+			animation-delay: 3s;
+		}
+		img:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			bottom: -30%;
+			left: -15%;
+			animation: fade 4s forwards, spin 10s linear infinite;
+			animation-delay: 1s;
+		}
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#state {
+		.state-bg {
+			img:nth-of-type(1) {
+				width: 600px;
+				top: -25%;
+				right: -30%;
+			}
+			img:nth-of-type(2) {
+				width: 600px;
+				bottom: -25%;
+				left: -30%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	#state {
+		.state-body {
+			.state-title {
+				font-size: 3rem;
+			}
+			.state-logo-brand {
+				max-width: 150px;
+			}
+		}
+		.state-bg {
+			img:nth-of-type(1) {
+				width: 500px;
+				top: -25%;
+				right: -40%;
+			}
+			img:nth-of-type(2) {
+				width: 500px;
+				bottom: -25%;
+				left: -40%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	#state {
+		.state-body {
+			.state-title {
+				font-size: 2.5rem;
+			}
+			.state-logo-brand {
+				max-width: 150px;
+			}
+		}
+		.state-bg {
+			img:nth-of-type(1) {
+				width: 400px;
+			}
+			img:nth-of-type(2) {
+				width: 400px;
+			}
+		}
+	}
+}

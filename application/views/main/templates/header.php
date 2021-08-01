@@ -18,6 +18,8 @@ date_default_timezone_set("Asia/Jakarta");
   <link rel="stylesheet" href="<?= base_url('assets/dist/'); ?>owlcarousel/assets/owl.theme.default.min.css">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="<?= base_url('assets/dist/'); ?>fontawesome-free/css/all.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="<?= base_url('assets/dist/'); ?>aos/aos.css">
   <!-- CSS -->
   <link rel="stylesheet" href="<?= base_url('assets/css/'); ?>style.css?modified=<?= date("Ymd-His"); ?>">
   <link rel="shortcut icon" href="<?= base_url('assets/img/'); ?>logo/logo.png" type="image/x-icon">

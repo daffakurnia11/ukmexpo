@@ -31,14 +31,29 @@ class Main extends CI_Controller
 
 	public function detail_ukm($slug)
 	{
-		$data = [
-			'body'					=> 'ukm-detail',
-			'detail'				=> $this->db->get_where('ukm_list', ['slug' => $slug])->row_array(),
-			'faqs'					=> $this->db->get_where('ukm_faq', ['slug'	=> $slug])->result_array()
-		];
-		$this->load->view('main/templates/header', $data);
-		$this->load->view('main/templates/navbar');
-		$this->load->view('main/detail');
-		$this->load->view('main/templates/footer');
+		$ukm = $this->db->get_where('ukm_list', ['slug' => $slug])->row_array();
+
+		if ($ukm) {
+			$data = [
+				'body'					=> 'ukm-detail',
+				'detail'				=> $ukm,
+				'faqs'					=> $this->db->get_where('ukm_faq', ['slug'	=> $slug])->result_array()
+			];
+			$this->load->view('main/templates/header', $data);
+			$this->load->view('main/templates/navbar');
+			$this->load->view('main/detail');
+			$this->load->view('main/templates/footer');
+		} else {
+			// Status 404
+			$this->output->set_status_header('404');
+
+			// 404 Page
+			$data = [
+				'body'		=> 'state'
+			];
+			$this->load->view('main/templates/header', $data);
+			$this->load->view('state/404');
+			$this->load->view('main/templates/empty_footer');
+		}
 	}
 }
