@@ -15,9 +15,9 @@
 <!-- Definition -->
 <section id="definition">
   <div class="definition container">
-    <h2 class="definition-meaning">begin /biˈgin/</h2>
+    <h2 class="definition-meaning">begin /bi'gin/</h2>
     <p class="definition-content">Memulai semua hal yang begitu baru, melangkah maju tanpa ada ragu.</p>
-    <h2 class="definition-meaning">again /əˈgen/</h2>
+    <h2 class="definition-meaning">again /ə'gen/</h2>
     <p class="definition-content">Mengulang kejayaan yang pernah datang, bangkit bersama lewati rintang tanpa
       ketakutan.</p>
     <div class="definition-desc mt-5 mx-auto">
@@ -95,6 +95,9 @@
           <img src="<?= base_url('assets/img/'); ?>svg/other-division.svg" class="bg-division" alt="">
         </div>
       </div>
+    </div>
+    <div class="about-info text-center">
+      <a href="" class="info-button">Cara Mendaftar</a>
     </div>
   </div>
 </section>

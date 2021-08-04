@@ -4,6 +4,7 @@
 @import "state";
 @import "ukm";
 @import "ukmdetail";
+@import "event";
 
 * {
 	margin: 0;
@@ -202,6 +203,13 @@ p {
 			z-index: -2;
 			transform: translate(-50%, -50%);
 		}
+	}
+	.about-info .info-button {
+		padding: 1rem 2rem;
+		border-radius: 3rem;
+		background: linear-gradient(to right, #ffc9bd, #a283f7);
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+		color: $primary-white;
 	}
 }
 

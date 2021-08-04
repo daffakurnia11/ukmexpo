@@ -15,9 +15,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto text-center">
         <a class="nav-link active" href="<?= base_url(''); ?>">Home</a>
-        <a class="nav-link" href="">Event</a>
+        <a class="nav-link" href="<?= base_url('event'); ?>">Event</a>
         <a class="nav-link" href="<?= base_url('ukm'); ?>">UKM</a>
-        <a class="nav-link" href="">Info</a>
+        <a class="nav-link" href="<?= base_url('info'); ?>">Info</a>
       </div>
     </div>
   </div>

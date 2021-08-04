@@ -25,11 +25,7 @@
 			padding: 1rem;
 			width: 225px;
 			height: 225px;
-			background: linear-gradient(
-				135deg,
-				rgba(255, 255, 255, 0.4),
-				rgba(255, 255, 255, 0.1)
-			);
+			background: $gradient-transparent;
 			margin: 0 auto 1.5rem;
 			border-radius: 1.25rem;
 			border: 1px solid #e8acbc;
@@ -54,11 +50,7 @@
 			padding: 1.5rem 2.5rem;
 			width: 100%;
 			min-height: 450px;
-			background: linear-gradient(
-				135deg,
-				rgba(255, 255, 255, 0.4),
-				rgba(255, 255, 255, 0.1)
-			);
+			background: $gradient-transparent;
 			border-radius: 1.25rem;
 			border: 1px solid #e2a9c1;
 		}

@@ -56,4 +56,26 @@ class Main extends CI_Controller
 			$this->load->view('main/templates/empty_footer');
 		}
 	}
+
+	public function event()
+	{
+		$data = [
+			'body'					=> 'event-body',
+		];
+		$this->load->view('main/templates/header', $data);
+		$this->load->view('main/templates/navbar');
+		$this->load->view('main/event');
+		$this->load->view('main/templates/footer');
+	}
+
+	public function info()
+	{
+		$data = [
+			'body'					=> 'event-body',
+		];
+		$this->load->view('main/templates/header', $data);
+		$this->load->view('main/templates/navbar');
+		$this->load->view('main/info');
+		$this->load->view('main/templates/footer');
+	}
 }

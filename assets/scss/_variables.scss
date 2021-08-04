@@ -59,6 +59,11 @@ $bg-ukm-detail: linear-gradient(
 	#5b1eb3
 );
 
+$gradient-transparent: linear-gradient(
+	135deg,
+	rgba(255, 255, 255, 0.4),
+	rgba(2555, 255, 255, 0.1)
+);
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
