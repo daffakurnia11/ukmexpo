@@ -1,13 +1,16 @@
 <!-- Header -->
 <header id="header">
   <div class="header container text-center">
-    <h3 class="header-intro">No matter how hard the past is,<br>you can always</h3>
-    <h1><q class="header-quotes">Begin Again</q></h1>
-    <h2>in<br><span class="header-brand">UKM EXPO 2021</span></h2>
-    <img src="<?= base_url('assets/img/'); ?>logo/logo_circle.png" class="mt-3" alt="">
+    <h3 class="header-intro" data-aos="zoom-in" data-aos-duration="1000">
+      No matter how hard the past is,<br>you can always
+    </h3>
+    <h1>
+      <q class="header-quotes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">Begin Again</q>
+    </h1>
+    <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">in<br><span class="header-brand">UKM EXPO 2021</span></h2>
   </div>
-  <div class="bg-header">
-    <img src="<?= base_url('assets/img/'); ?>svg/bg-header.svg" alt="">
+  <div class="bg-header text-center" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="2000">
+    <img src="<?= base_url('assets/img/'); ?>illustration/main-header.png" alt="">
   </div>
 </header>
 <!-- End of Header -->
@@ -15,12 +18,12 @@
 <!-- Definition -->
 <section id="definition">
   <div class="definition container">
-    <h2 class="definition-meaning">begin /bi'gin/</h2>
-    <p class="definition-content">Memulai semua hal yang begitu baru, melangkah maju tanpa ada ragu.</p>
-    <h2 class="definition-meaning">again /ə'gen/</h2>
-    <p class="definition-content">Mengulang kejayaan yang pernah datang, bangkit bersama lewati rintang tanpa
+    <h2 class="definition-meaning" data-aos="fade-right" data-aos-duration="1000">begin /bi'gin/</h2>
+    <p class="definition-content" data-aos="fade-right" data-aos-duration="1000">Memulai semua hal yang begitu baru, melangkah maju tanpa ada ragu.</p>
+    <h2 class="definition-meaning" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">again /ə'gen/</h2>
+    <p class="definition-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Mengulang kejayaan yang pernah datang, bangkit bersama lewati rintang tanpa
       ketakutan.</p>
-    <div class="definition-desc mt-5 mx-auto">
+    <div class="definition-desc mt-5 mx-auto" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="1000">
       <p class="text-center">40 UKM dan LMB, bagai kelopak bunga.
         Bersiap mekar menggenggam asa, merangkai cita menjadi jawara.
         UKM Expo tak terbatas ruang dan keadaan.
@@ -52,10 +55,10 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-xl-4">
-        <h1 class="about-title mb-4">Apa itu<br>UKM EXPO<br>2021?</h1>
+        <h1 class="about-title mb-4" data-aos="fade-right" data-aos-duration="1000">Apa itu<br>UKM EXPO<br>2021?</h1>
       </div>
       <div class="col-lg-7 col-xl-8">
-        <p class="about-desc">
+        <p class="about-desc" data-aos="fade-right" data-aos-duration="1000">
           UKM Expo merupakan suatu rangkaian kegiatan untuk memperkenalkan Unit Kegiatan Mahasiswa
           (UKM) kepada para mahasiswa baru. Dalam UKM Expo, mahasiswa baru memiliki kesempatan untuk bertanya mengenai
           seluk beluk dan berbagai aktivitas UKM yang mereka minati. UKM Expo ini diharapkan bisa menjadi sarana untuk
@@ -64,7 +67,7 @@
         </p>
       </div>
     </div>
-    <div class="about-quotes mt-3">
+    <div class="about-quotes mt-3" data-aos="fade-up" data-aos-duration="1000">
       <p>
         Untuk mahasiswa baru yang masih meraba-raba mengenai minat bakatnya diharapkan setelah mengikuti rangkaian
         kegiatan UKM Expo ini dapat mengenali minat bakatnya pada bidang apa.
@@ -72,32 +75,32 @@
     </div>
     <div class="row">
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <h3>Olahraga?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/sport-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
           <h3>Seni?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/art-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
           <h3>Bela Diri?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/defense-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
           <h3>Bidang Khusus?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/other-division.svg" class="bg-division" alt="">
         </div>
       </div>
     </div>
     <div class="about-info text-center">
-      <a href="" class="info-button">Cara Mendaftar</a>
+      <a href="<?= base_url('info'); ?>" class="info-button" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="2000" data-aos-offset="30">Cara Mendaftar</a>
     </div>
   </div>
 </section>
@@ -108,19 +111,19 @@
   <div class="container logo text-center">
     <div class="logo-title-left">FILOSOFI</div>
     <div class="logo-title-right">LOGO</div>
-    <h3 class="logo-instruction" id="logo-instruction">Klik logo untuk mengetahui maknanya!</h3>
+    <h3 class="logo-instruction" id="logo-instruction" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="1200">Klik logo untuk mengetahui maknanya!</h3>
     <div class="row align-items-center my-0 my-lg-5">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="1200">
         <img src="<?= base_url('assets/img/'); ?>logo/interact_logo1.png" class="logo-interaction my-4 px-5" id="logo-interaction" alt="Logo">
       </div>
       <div class="col-lg-6">
         <div class="logo-meaning mt-3">
-          <p>Kreativitas & Elegan</p>
-          <p>Kebahagiaan & Kehangatan</p>
-          <p>Energik & Optimisme</p>
-          <p>Perkembangan & Harmoni</p>
-          <p>Kecerdasan & Kebijaksanaan</p>
-          <p>Tanggungjawab & Percaya Diri</p>
+          <p data-aos="fade-up" data-aos-duration="1000">Kreativitas & Elegan</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Kebahagiaan & Kehangatan</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Energik & Optimisme</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Perkembangan & Harmoni</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Kecerdasan & Kebijaksanaan</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Tanggungjawab & Percaya Diri</p>
         </div>
       </div>
     </div>
@@ -134,23 +137,23 @@
     <div class="row align-items-center">
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="mascot-header">
-          <h2 class="mascot-title">Meet the Great Graddie</h2>
+          <h2 class="mascot-title" data-aos="fade-zoom-in" data-aos-duration="1000">Meet the Great Graddie</h2>
         </div>
         <div class="mascot-content my-5">
-          <p>Hai! Kalian bisa memanggilku Graddie. Aku adalah spesies paling tangguh di bumi yang dapat beradaptasi
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Hai! Kalian bisa memanggilku Graddie. Aku adalah spesies paling tangguh di bumi yang dapat beradaptasi
             dalam
             segala kondisi! </p>
-          <p>Aku tidak mau kalah dengan situasi ketidakpastian di hadapanku dan akan selalu bangkit memulai kembali
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Aku tidak mau kalah dengan situasi ketidakpastian di hadapanku dan akan selalu bangkit memulai kembali
             untuk
             melangkah maju tanpa ragu!</p>
-          <div class="text-center">
-            <a href="" class="mascot-button">Kenalan, yuk!</a>
+          <div class="text-center" data-aos="fade-zoom-in" data-aos-duration="750" data-aos-delay="500">
+            <a href="<?= base_url('maskot'); ?>" class="mascot-button">Kenalan, yuk!</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 order-1 order-lg-2">
-        <div class="mascot-image text-center">
-          <img src="<?= base_url('assets/img/'); ?>mascot.png" alt="">
+        <div class="mascot-image text-center" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img src="<?= base_url('assets/img/'); ?>mascot/mascot.png" alt="">
         </div>
       </div>
     </div>
@@ -163,7 +166,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8 order-2 order-lg-1">
-        <div class="retrospeksi-content my-4">
+        <div class="retrospeksi-content my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <h3 class="retrospeksi-year">
             <svg width="114" height="20" viewBox="0 0 114 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="14" height="20" fill="white" />
@@ -174,7 +177,7 @@
             </svg>
             <span>2019</span>
           </h3>
-          <div class="owl-carousel owl-theme mt-3">
+          <div class="owl-carousel photo-carousel owl-theme mt-3">
             <div class="item">
               <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
             </div>
@@ -189,7 +192,7 @@
             </div>
           </div>
         </div>
-        <div class="retrospeksi-content my-4">
+        <div class="retrospeksi-content my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
           <h3 class="retrospeksi-year">
             <svg width="114" height="20" viewBox="0 0 114 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="14" height="20" fill="white" />
@@ -200,7 +203,7 @@
             </svg>
             <span>2020</span>
           </h3>
-          <div class="owl-carousel owl-theme mt-3">
+          <div class="owl-carousel photo-carousel owl-theme mt-3">
             <div class="item">
               <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
             </div>
@@ -216,7 +219,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 order-1 order-lg-2">
+      <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-zoom-in" data-aos-duration="1500">
         <h2 class="retrospeksi-title text-center">
           Retro<br class="d-none d-xl-block">speksi<br>
           2019<br class="d-none d-lg-block">

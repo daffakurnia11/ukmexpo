@@ -6,10 +6,11 @@ class Main extends CI_Controller
 	public function index()
 	{
 		$data = [
-			'body'		=> 'main'
+			'body'		=> 'main',
+			'navbar'	=> 'Home'
 		];
 		$this->load->view('main/templates/header', $data);
-		$this->load->view('main/templates/navbar');
+		$this->load->view('main/templates/navbar', $data);
 		$this->load->view('main/index');
 		$this->load->view('main/templates/footer');
 	}
@@ -18,6 +19,8 @@ class Main extends CI_Controller
 	{
 		$data = [
 			'body'					=> 'main-ukm',
+			'navbar'				=> 'UKM',
+
 			'olahraga'			=> $this->db->get_where('ukm_list', ['type' => 'Olahraga'])->result_array(),
 			'bidangkhusus'	=> $this->db->get_where('ukm_list', ['type' => 'BidangKhusus'])->result_array(),
 			'seni'					=> $this->db->get_where('ukm_list', ['type' => 'Seni'])->result_array(),
@@ -36,6 +39,7 @@ class Main extends CI_Controller
 		if ($ukm) {
 			$data = [
 				'body'					=> 'ukm-detail',
+				'navbar'				=> 'UKM',
 				'detail'				=> $ukm,
 				'faqs'					=> $this->db->get_where('ukm_faq', ['slug'	=> $slug])->result_array()
 			];
@@ -57,25 +61,27 @@ class Main extends CI_Controller
 		}
 	}
 
-	public function event()
-	{
-		$data = [
-			'body'					=> 'event-body',
-		];
-		$this->load->view('main/templates/header', $data);
-		$this->load->view('main/templates/navbar');
-		$this->load->view('main/event');
-		$this->load->view('main/templates/footer');
-	}
-
 	public function info()
 	{
 		$data = [
 			'body'					=> 'event-body',
+			'navbar'				=> 'Info',
 		];
 		$this->load->view('main/templates/header', $data);
 		$this->load->view('main/templates/navbar');
 		$this->load->view('main/info');
+		$this->load->view('main/templates/footer');
+	}
+
+	public function maskot()
+	{
+		$data = [
+			'body'					=> 'mascot-body',
+			'navbar'				=> 'Home',
+		];
+		$this->load->view('main/templates/header', $data);
+		$this->load->view('main/templates/navbar');
+		$this->load->view('main/mascot');
 		$this->load->view('main/templates/footer');
 	}
 }

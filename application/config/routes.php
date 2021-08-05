@@ -55,5 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['main']  = 'main';
 $route['ukm']  = 'main/ukm';
-$route['event']  = 'main/event';
+$route['event']  = 'event';
+$route['elaborasi']  = 'event/elaborasi';
 $route['info']  = 'main/info';
+$route['maskot']  = 'main/maskot';

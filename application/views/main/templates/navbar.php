@@ -14,10 +14,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto text-center">
-        <a class="nav-link active" href="<?= base_url(''); ?>">Home</a>
-        <a class="nav-link" href="<?= base_url('event'); ?>">Event</a>
-        <a class="nav-link" href="<?= base_url('ukm'); ?>">UKM</a>
-        <a class="nav-link" href="<?= base_url('info'); ?>">Info</a>
+        <a class="nav-link <?= $navbar == 'Home' ? 'active' : ''; ?>" href="<?= base_url(''); ?>">Home</a>
+        <a class="nav-link <?= $navbar == 'Event' ? 'active' : ''; ?>" href="<?= base_url('event'); ?>">Event</a>
+        <a class="nav-link <?= $navbar == 'UKM' ? 'active' : ''; ?>" href="<?= base_url('ukm'); ?>">UKM</a>
+        <a class="nav-link <?= $navbar == 'Info' ? 'active' : ''; ?>" href="<?= base_url('info'); ?>">Info</a>
       </div>
     </div>
   </div>

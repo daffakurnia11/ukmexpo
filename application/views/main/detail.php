@@ -12,7 +12,12 @@
           <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/<?= $detail['type'] . '/' . $detail['logo']; ?>" alt="">
         </div>
         <div class="text-center">
-          <a href="" class="purple-button">Daftar Sekarang!</a>
+          <a href="<?= $detail['daftar']; ?>" target="_blank" class="purple-button d-block mx-auto">Daftar Sekarang!</a>
+        </div>
+        <div class="detail-contact">
+          <h3 class="contact-title">Kontak</h3>
+          <a href="mailto:<?= $detail['email']; ?>" target="_blank" class="pink-button d-block mx-auto my-3">Email</a>
+          <a href="https://www.instagram.com/<?= $detail['instagram']; ?>/" target="_blank" class="pink-button d-block mx-auto my-3">Instagram</a>
         </div>
       </div>
       <div class="col-lg-9 col-md-8">

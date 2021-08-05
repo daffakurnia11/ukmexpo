@@ -87,7 +87,7 @@
         <div class="col-lg-3 col-md-4 col-6">
           <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
-              <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/Khusus/<?= $data['logo']; ?>" alt="">
+              <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/BidangKhusus/<?= $data['logo']; ?>" alt="">
             </div>
             <p><?= $data['ukm_name']; ?></p>
           </a>
@@ -133,7 +133,7 @@
         <div class="col-md-4 col-6">
           <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
-              <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/Bela Diri/<?= $data['logo']; ?>" alt="">
+              <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/BelaDiri/<?= $data['logo']; ?>" alt="">
             </div>
             <p><?= $data['ukm_name']; ?></p>
           </a>

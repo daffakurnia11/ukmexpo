@@ -48,6 +48,11 @@
 </footer>
 <!-- End of Footer -->
 
+<!-- Scroll to Top -->
+<div class="scrollToTop">
+  <i class="fas fa-2x fa-arrow-up"></i>
+</div>
+
 <!-- Javascript -->
 <script src="<?= base_url('assets/dist/'); ?>bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('assets/dist/'); ?>jquery/dist/jquery.min.js"></script>

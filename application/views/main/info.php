@@ -17,9 +17,9 @@
           <li>Peserta mendapatkan konfirmasi registrasi melalui email.</li>
           <li>Peserta mendapatkan link Zoom ELABORASI melalui email yang telah diisikan.</li>
         </ul>
-        <div class="info-button text-center">
-          <a href="<?= base_url('event'); ?>">Event</a>
-        </div>
+        <a href="<?= base_url('event'); ?>" class="info-button text-center">
+          Event
+        </a>
         <div class="info-notes">
           <h3>Catatan :</h3>
           <ul class="notes-list">
@@ -38,9 +38,9 @@
           <li>Peserta diarahkan untuk memilih opsi salah satu dari 4 bidang UKM kemudian memilih salah satu UKM dari bidang UKM tersebut sesuai yang diminati.</li>
           <li>Pendaftaran dilakukan dengan menekan button “Mendaftar” dan mengisi link pendaftaran UKM yang dipilih</li>
         </ul>
-        <div class="info-button text-center">
-          <a href="<?= base_url('ukm'); ?>">UKM</a>
-        </div>
+        <a href="<?= base_url('ukm'); ?>" class="info-button text-center">
+          UKM
+        </a>
         <div class="info-notes">
           <h3>Catatan :</h3>
           <ul class="notes-list">

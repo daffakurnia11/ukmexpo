@@ -20,7 +20,7 @@
 		to bottom,
 		$navbar-color 5%,
 		#fdb7aa,
-		#ac67f8 30%,
+		#ac67f8 60%,
 		#5b1eb3 90%
 	);
 	overflow-x: hidden;
@@ -30,7 +30,6 @@
 }
 
 #event-header {
-	// @include full-viewpage(70vh);
 	padding: 2rem 0;
 	min-height: 85vh;
 	position: relative;
@@ -53,21 +52,6 @@
 			width: 350px;
 			max-width: 100%;
 		}
-		.event-play {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			bottom: 17%;
-			left: 50%;
-			transform: translateX(-50%);
-			background: linear-gradient(to bottom, #fdb7ab, #fdb7ab2c);
-			padding-left: 8px;
-			width: 80px;
-			height: 80px;
-			border-radius: 50%;
-			cursor: pointer;
-		}
 		.event-flower {
 			position: absolute;
 			z-index: -2;
@@ -75,6 +59,21 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+	}
+	.event-play {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 17%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: linear-gradient(to bottom, #fdb7ab, #fdb7ab2c);
+		padding-left: 8px;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		cursor: pointer;
 	}
 	.event-star-bg {
 		position: absolute;
@@ -136,11 +135,26 @@
 	}
 }
 
-#event-schedule {
+// Elaborasi Page
+#elaborasi-body {
+	background: linear-gradient(
+		to bottom,
+		$navbar-color 5%,
+		#fdb7aa 30%,
+		#ac67f8,
+		#5b1eb3 90%
+	);
+	overflow-x: hidden;
+	transition: all 0.3s;
+	font-family: $nunito-font;
+	color: $primary-white;
+}
+
+#elaborasi {
+	padding: 2rem 0;
 	.schedule-title {
 		@include title();
 		background: linear-gradient(to right, #fdb7ab73 10%, #a865f067 80%);
-		margin-top: 4.5rem;
 		margin-bottom: 2.5rem;
 	}
 	.schedule-card {
@@ -181,14 +195,14 @@
 					margin-left: -2rem;
 				}
 			}
-			.schedule-rundown {
+			.schedule-button {
 				position: absolute;
 				bottom: 1.25rem;
 				left: 50%;
 				transform: translateX(-50%);
 				font-size: 1rem;
 				width: fit-content;
-				color: $secondary-orange;
+				color: $primary-purple;
 				font-weight: 900;
 				padding: 0.75rem 1.5rem;
 				border: 1px solid $secondary-orange;
@@ -199,8 +213,52 @@
 	}
 }
 
+#rundown {
+	.rundown-title {
+		@include title();
+		background: linear-gradient(to right, #a865f067 10%, #fdb7ab73 80%);
+		margin: 1rem auto;
+	}
+	.rundown-content {
+		margin: 2rem auto;
+	}
+	.rundown-date {
+		background: $gradient-transparent;
+		color: $primary-white;
+		border: 1px solid $secondary-orange;
+		border-radius: 1rem;
+		font-size: 1.25rem;
+		text-align: center;
+		padding: 0.75rem 0;
+		width: 450px;
+		max-width: 100%;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+		cursor: pointer;
+		&:not(.collapsed) {
+			background-color: $primary-white;
+			color: $primary-purple;
+		}
+	}
+	.rundown-table {
+		margin-top: 1rem;
+		.rundown-list {
+			margin: 0.75rem 0;
+			span {
+				font-family: $nunito-font;
+				font-size: 1.25rem;
+			}
+			.rundown-time {
+				text-align: left;
+				width: 200px;
+				max-width: 100%;
+			}
+		}
+	}
+}
+// End of Elaborasi Page
+
+// For Information page
 #info-page {
-	// @include full-viewpage(85vh);
 	min-height: 85vh;
 	.info-title {
 		margin: 2rem auto;
@@ -243,6 +301,7 @@
 			}
 		}
 		.info-button {
+			display: block;
 			margin: 1rem auto;
 			padding: 0.75rem 0;
 			width: 300px;
@@ -275,6 +334,64 @@
 		}
 	}
 }
+// End of Information page
+
+// Virtual Expo
+.virtualexpo-regis {
+	width: 625px;
+	max-width: 100%;
+	position: relative;
+	background: linear-gradient(to right, #ae69f7, #fdb7ab);
+	padding: 1.5rem 3rem;
+	border-radius: 2rem;
+	margin: 2rem auto 0;
+	.virtualexpo-category {
+		border: 2px solid $secondary-orange;
+		border-radius: 1rem;
+		font-size: 1.25rem;
+		font-weight: 900;
+		text-align: center;
+		padding: 0.5rem;
+		width: 250px;
+		max-width: 100%;
+		margin: 0.5rem auto;
+		&.active {
+			background: $gradient-transparent;
+		}
+	}
+	.virtualexpo-form {
+		height: 200px;
+		.virtualexpo-input {
+			border: none;
+			border-bottom: 1px solid $primary-white;
+			background: transparent;
+			padding: 0.5rem;
+			text-align: center;
+			color: $primary-white;
+			width: 100%;
+			margin: 0.75rem 0;
+			&::placeholder {
+				color: $secondary-orange;
+			}
+			&:focus {
+				outline: none !important;
+			}
+		}
+	}
+}
+.virtualexpo-submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom, #fdb7ab, #fdb7ab2c);
+	margin: 1.5rem auto;
+	padding-left: 8px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+// End of Virtual Expo
 
 @media screen and (max-width: 992px) {
 	#event-header {

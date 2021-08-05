@@ -1,0 +1,203 @@
+@import "variables";
+@import "mixin";
+
+$primary-mascot: #f8aa19;
+$secondary-mascot: #ea4e6e;
+$primary-yellow: #fff500;
+
+#mascot-body {
+	background: linear-gradient(to bottom, $secondary-mascot, $primary-mascot);
+	color: $primary-white;
+}
+
+#mascot-header {
+	padding-top: 2rem;
+	.mascot-picture {
+		margin: 2rem auto;
+		width: 475px;
+		max-width: 100%;
+	}
+	.mascot-box {
+		border: 1px solid $primary-mascot;
+		background: $gradient-transparent;
+		box-shadow: 8px 8px 8px #31234c36;
+		padding: 1.5rem;
+		border-radius: 1.25rem;
+		.mascot-content {
+			margin: 0 auto 1rem;
+			width: 470px;
+			max-width: 100%;
+		}
+		.mascot-name {
+			font-size: 2.5rem;
+			text-align: center;
+			font-weight: 900;
+			margin: 1rem auto 3rem;
+		}
+		.mascot-brand {
+			font-size: 1rem;
+			font-weight: 900;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.mascot-assets {
+			font-size: 1.25rem;
+			font-weight: 900;
+			margin-bottom: 2rem;
+		}
+		.star-group {
+			color: $primary-yellow;
+		}
+		.mascot-palette {
+			span {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				margin-left: 0.5rem;
+				border-radius: 50%;
+			}
+		}
+		.mascot-traits {
+			ul {
+				li {
+					font-size: 1.15rem;
+					font-weight: 900;
+					float: right;
+					margin-left: 1.75rem;
+				}
+			}
+		}
+		.mascot-character {
+			h2 {
+				font-size: 1.5rem;
+				font-weight: 900;
+				text-align: center;
+			}
+			ol {
+				list-style: decimal;
+				width: 250px;
+				max-width: 100%;
+				margin: 1rem auto;
+			}
+			&:first-of-type {
+				border-right: 1px solid $primary-white;
+			}
+		}
+	}
+}
+
+#mascot-content {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	.mascot-component {
+		background: #fee4e3;
+		border-top-left-radius: 3rem;
+		border-bottom-left-radius: 3rem;
+		height: 550px;
+		padding: 2.5rem;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.mascot-definition {
+		height: 550px;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.4),
+			rgba(255, 255, 255, 0.1)
+		);
+		border-top-right-radius: 3rem;
+		border-bottom-right-radius: 3rem;
+		padding: 3rem 1rem;
+		h1 {
+			font-family: $nunito-font;
+			font-size: 3rem;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			&::after {
+				content: "";
+				display: block;
+				margin: 0.75rem auto 1.25rem;
+				width: 80%;
+				height: 2px;
+				background-color: $primary-white;
+			}
+		}
+		.component-name {
+			font-family: $nunito-font;
+			color: #e8482b;
+			text-align: center;
+			font-size: 2.25rem;
+			font-weight: 700;
+		}
+		.component-desc {
+			margin: 0 auto;
+			width: 350px;
+			max-width: 100%;
+			font-size: 1.25rem;
+			font-weight: 600;
+			font-family: $nunito-font;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#mascot-content {
+		.mascot-component {
+			height: 350px;
+		}
+		.mascot-definition {
+			height: 350px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#mascot-content {
+		.mascot-component {
+			border-top-left-radius: 2rem;
+			border-top-right-radius: 2rem;
+			border-bottom-left-radius: 0;
+		}
+		.mascot-definition {
+			border-top-right-radius: 0;
+			border-bottom-left-radius: 2rem;
+			border-bottom-right-radius: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#mascot-header {
+		padding-top: 2rem;
+		.mascot-picture {
+			margin-top: 2rem;
+			width: 475px;
+			max-width: 100%;
+		}
+		.mascot-box {
+			.mascot-character:first-of-type {
+				margin-bottom: 1rem;
+				border-right: none;
+			}
+			&:last-of-type {
+				margin: 2.5rem auto 0;
+				width: 350px;
+				max-width: 100%;
+			}
+		}
+	}
+	#mascot-content {
+		.mascot-component {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.mascot-definition {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}

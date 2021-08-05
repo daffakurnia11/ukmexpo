@@ -5,6 +5,7 @@
 @import "ukm";
 @import "ukmdetail";
 @import "event";
+@import "mascot";
 
 * {
 	margin: 0;
@@ -47,11 +48,44 @@ strong {
 p {
 	margin: 0;
 }
+button {
+	background: none;
+	border: none;
+	color: inherit;
+}
+
+.scrollToTop {
+	position: fixed;
+	bottom: -4rem;
+	right: 2rem;
+	color: $primary-orange;
+	width: fit-content;
+	padding: 0.75rem 1rem;
+	background: $secondary-orange;
+	border-radius: 50%;
+	cursor: pointer;
+
+	animation: scrollToTop 0.65s ease-in-out forwards;
+	animation-delay: 0.5s;
+}
+
+@keyframes scrollToTop {
+	0% {
+		bottom: -4rem;
+	}
+	60% {
+		bottom: 3rem;
+	}
+	100% {
+		bottom: 2rem;
+	}
+}
 
 #main {
 	background: $bg-main;
 }
 
+// Navbar
 .navbar {
 	font-weight: 700;
 	background-color: $navbar-color;
@@ -75,18 +109,38 @@ p {
 	}
 	&-nav {
 		.nav-link {
-			margin: auto 1rem;
+			margin: 0.25rem 1rem;
 			text-transform: uppercase;
 			color: inherit;
+			&.active {
+				position: relative;
+				&::after {
+					content: "";
+					// position: absolute;
+					// left: 0;
+					display: block;
+					margin: 0.25rem auto;
+					width: 2rem;
+					height: 2px;
+					background-color: $secondary-purple;
+				}
+			}
 		}
 	}
 }
+// End of Navbar
 
+// Main Header
 #header {
+	// min-height: 100vh;
+	@include full-viewpage(100vh);
+	min-height: 660px;
+	justify-content: flex-start;
 	width: 100vw;
 	position: relative;
 	.header {
-		@include full-viewpage(80vh);
+		@include full-viewpage(50vh);
+		padding-top: 0;
 		padding-bottom: 100px;
 		font-family: $nunito-font;
 		color: #ab66f7;
@@ -108,18 +162,21 @@ p {
 		width: 100%;
 		position: absolute;
 		z-index: -1;
-		bottom: -30px;
-		left: 50%;
-		transform: translateX(-50%);
+		top: 225px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		img {
 			width: 100%;
 		}
 	}
 }
+// End of Main Header
 
 #definition {
-	margin-top: 5rem;
 	@include full-viewpage(100vh);
+	margin-top: 4rem;
 	position: relative;
 	.definition {
 		&-meaning {
@@ -483,6 +540,22 @@ footer {
 
 // MEDIA QUERIES WIDTH 1200px
 @media screen and (max-width: 1200px) {
+	#header {
+		.bg-header {
+			overflow-x: hidden;
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			// transform: translateX(-50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: max-content;
+			}
+		}
+	}
 	#about {
 		.division {
 			height: 100px;
@@ -617,6 +690,9 @@ footer {
 			&-brand {
 				font-size: 2rem;
 			}
+		}
+		.bg-header {
+			top: 155px;
 		}
 	}
 	#definition {

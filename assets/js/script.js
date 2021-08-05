@@ -1,10 +1,12 @@
 AOS.refresh();
+AOS.refreshHard();
 AOS.init({
-  once: true
+  once: true,
+  offset: 75
 })
 
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  $('.photo-carousel').owlCarousel({
     loop: true,
     margin: 14,
     autoplay: true,
@@ -24,6 +26,16 @@ $(document).ready(function () {
       }
     }
   })
+  $('.mascot-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    center: true,
+    items: 1,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 2000,
+  })
+
+  // UKM LIST BUTTON TRIGGER
   $('#sportTrigger').on('click', function () {
     $('#ukm-list').css('display', 'block');
     $('.ukm-content').css('display', 'none');
@@ -47,6 +59,22 @@ $(document).ready(function () {
   $('.scrollToTop').on('click', function () {
     $(window).scrollTop(0);
   })
+
+  // VIRTUAL EXPO REGISTRATION BUTTON TRIGGER
+  $('#mahasiswaButton').on('click', function () {
+    $('.virtualexpo-category').removeClass('active');
+    $(this).addClass('active');
+
+    $('.virtualexpo-form').css('display', 'none');
+    $('#mahasiswaCategory').css('display', 'block');
+  });
+  $('#umumButton').on('click', function () {
+    $('.virtualexpo-category').removeClass('active');
+    $(this).addClass('active');
+
+    $('.virtualexpo-form').css('display', 'none');
+    $('#umumCategory').css('display', 'block');
+  });
 });
 
 var imgIndex = 1;
@@ -64,4 +92,19 @@ $("#logo-interaction").on('click', function () {
   }
   $("#logo-interaction").attr('src', 'assets/img/logo/interact_logo' + imgIndex + '.png');
   $("#logo-instruction").html(instruction[imgIndex - 1]);
+});
+
+const mascoutDesc = [
+  "Melambangkan ITS sebagai lembaga pendidikan formal",
+  "Melambangkan identitas almamater kita, ITS",
+  "Melambangkan empat bidang UKM yang ada di ITS",
+  "Melambangkan keceriaan, semangat, dan optimisme"
+];
+$("#mascot-interaction").on('click', function () {
+  imgIndex++;
+  if (imgIndex == 5) {
+    imgIndex = 1;
+  }
+  $("#mascot-image").attr('src', 'assets/img/mascot/component' + imgIndex + '.png');
+  $(".component-desc").html(mascoutDesc[imgIndex - 1]);
 });
