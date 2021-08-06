@@ -17,7 +17,7 @@
         <a class="nav-link <?= $navbar == 'Home' ? 'active' : ''; ?>" href="<?= base_url(''); ?>">Home</a>
         <a class="nav-link <?= $navbar == 'Event' ? 'active' : ''; ?>" href="<?= base_url('event'); ?>">Event</a>
         <a class="nav-link <?= $navbar == 'UKM' ? 'active' : ''; ?>" href="<?= base_url('ukm'); ?>">UKM</a>
-        <a class="nav-link <?= $navbar == 'Info' ? 'active' : ''; ?>" href="<?= base_url('info'); ?>">Info</a>
+        <a class="nav-link <?= $navbar == 'Merchandise' ? 'active' : ''; ?>" href="<?= base_url('soon'); ?>">Merchandise</a>
       </div>
     </div>
   </div>

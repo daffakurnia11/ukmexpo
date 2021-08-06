@@ -94,11 +94,15 @@ $("#logo-interaction").on('click', function () {
   $("#logo-instruction").html(instruction[imgIndex - 1]);
 });
 
-const mascoutDesc = [
+const mascotDesc = [
   "Melambangkan ITS sebagai lembaga pendidikan formal",
   "Melambangkan identitas almamater kita, ITS",
   "Melambangkan empat bidang UKM yang ada di ITS",
   "Melambangkan keceriaan, semangat, dan optimisme"
+];
+
+const mascotTitle = [
+  "Dasi dan Kerah", "Gerigi", "4 Badge", "Warna-warna Cerah"
 ];
 $("#mascot-interaction").on('click', function () {
   imgIndex++;
@@ -106,5 +110,6 @@ $("#mascot-interaction").on('click', function () {
     imgIndex = 1;
   }
   $("#mascot-image").attr('src', 'assets/img/mascot/component' + imgIndex + '.png');
-  $(".component-desc").html(mascoutDesc[imgIndex - 1]);
+  $(".component-desc").html(mascotDesc[imgIndex - 1]);
+  $(".component-name").html(mascotTitle[imgIndex - 1]);
 });

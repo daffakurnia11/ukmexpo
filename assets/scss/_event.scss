@@ -230,7 +230,7 @@
 		font-size: 1.25rem;
 		text-align: center;
 		padding: 0.75rem 0;
-		width: 450px;
+		width: 300px;
 		max-width: 100%;
 		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 		cursor: pointer;
@@ -414,6 +414,14 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#info-page {
+		.info-body {
+			border-radius: 4rem;
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	#event-header {
 		.event-sub {
@@ -454,6 +462,13 @@
 			}
 		}
 	}
+	#elaborasi {
+		.schedule-card {
+			&-body {
+				min-height: 270px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 576px) {
 	#event-header {
@@ -488,9 +503,22 @@
 			}
 		}
 	}
+	#elaborasi {
+		.schedule-card {
+			&-body {
+				min-height: fit-content;
+				padding-bottom: 5rem;
+			}
+		}
+	}
 	#event-info {
 		.info-body {
 			padding: 2rem 1rem;
+		}
+	}
+	#info-page {
+		.info-body {
+			border-radius: 2rem;
 		}
 	}
 }

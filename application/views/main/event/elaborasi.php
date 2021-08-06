@@ -1,10 +1,10 @@
 <!-- Elaborasi -->
 <section id="elaborasi">
   <div class="container">
-    <h2 class="schedule-title">Jadwal Elaborasi</h2>
+    <h2 class="schedule-title" data-aos="fade-right" data-aos-duration="1000">Jadwal Elaborasi</h2>
     <div class="row justify-content-center">
       <div class="col-md-4 col-sm-6">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="" data-aos-offset="0">
           <div class="schedule-card-head">
             <h3 class="schedule-card-title">
               23 Agustus
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
           <div class="schedule-card-head">
             <h3 class="schedule-card-title">
               24 Agustus
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
           <div class="schedule-card-head">
             <h3 class="schedule-card-title">
               25 Agustus
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
           <div class="schedule-card-head">
             <h3 class="schedule-card-title">
               26 Agustus
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <div class="schedule-card">
+        <div class="schedule-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-offset="0">
           <div class="schedule-card-head">
             <h3 class="schedule-card-title">
               27 Agustus
@@ -126,27 +126,27 @@
       <div class="row justify-content-center">
         <div class="col-sm-6 col-md-4 col-xl-2">
           <h2 class="rundown-date mx-auto mx-md-0" id="dayOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Day 1<br class="d-none d-sm-block"><span class="d-inline d-sm-none"> : </span>23 Agustus
+            Day 1<br class="d-none d-md-block"><span class="d-inline d-md-none"> : </span>23 Agustus
           </h2>
         </div>
         <div class="col-sm-6 col-md-4 col-xl-2">
           <h2 class="rundown-date collapsed mx-auto mx-md-0" id="dayTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            Day 2<br class="d-none d-sm-block"><span class="d-inline d-sm-none"> : </span>24 Agustus
+            Day 2<br class="d-none d-md-block"><span class="d-inline d-md-none"> : </span>24 Agustus
           </h2>
         </div>
         <div class="col-sm-6 col-md-4 col-xl-2">
           <h2 class="rundown-date collapsed mx-auto mx-md-0" id="dayThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-            Day 3<br class="d-none d-sm-block"><span class="d-inline d-sm-none"> : </span>25 Agustus
+            Day 3<br class="d-none d-md-block"><span class="d-inline d-md-none"> : </span>25 Agustus
           </h2>
         </div>
         <div class="col-sm-6 col-md-4 col-xl-2">
           <h2 class="rundown-date collapsed mx-auto mx-md-0" id="dayFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-            Day 4<br class="d-none d-sm-block"><span class="d-inline d-sm-none"> : </span>26 Agustus
+            Day 4<br class="d-none d-md-block"><span class="d-inline d-md-none"> : </span>26 Agustus
           </h2>
         </div>
         <div class="col-sm-6 col-md-4 col-xl-2">
           <h2 class="rundown-date collapsed mx-auto mx-md-0" id="dayFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-            Day 5<br class="d-none d-sm-block"><span class="d-inline d-sm-none"> : </span>27 Agustus
+            Day 5<br class="d-none d-md-block"><span class="d-inline d-md-none"> : </span>27 Agustus
           </h2>
         </div>
       </div>

@@ -127,6 +127,10 @@ $primary-yellow: #fff500;
 		}
 		.component-name {
 			font-family: $nunito-font;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: calc(2.25rem * 2);
 			color: #e8482b;
 			text-align: center;
 			font-size: 2.25rem;
@@ -137,9 +141,21 @@ $primary-yellow: #fff500;
 			width: 350px;
 			max-width: 100%;
 			font-size: 1.25rem;
+			height: calc(1.25rem * 2);
 			font-weight: 600;
 			font-family: $nunito-font;
 			text-align: center;
+		}
+		.fas {
+			color: $primary-white;
+			cursor: pointer;
+			transition: ease-in-out 0.3s;
+			&:hover {
+				color: $primary-mascot;
+			}
+			&:active {
+				color: $secondary-mascot;
+			}
 		}
 	}
 }
@@ -161,11 +177,15 @@ $primary-yellow: #fff500;
 			border-top-left-radius: 2rem;
 			border-top-right-radius: 2rem;
 			border-bottom-left-radius: 0;
+			height: 280px;
 		}
 		.mascot-definition {
 			border-top-right-radius: 0;
 			border-bottom-left-radius: 2rem;
 			border-bottom-right-radius: 2rem;
+			.component-desc {
+				height: 77px;
+			}
 		}
 	}
 }
@@ -179,6 +199,15 @@ $primary-yellow: #fff500;
 			max-width: 100%;
 		}
 		.mascot-box {
+			.mascot-palette {
+				span {
+					display: inline-block;
+					width: 25px;
+					height: 25px;
+					margin-left: 0.25rem;
+					border-radius: 50%;
+				}
+			}
 			.mascot-character:first-of-type {
 				margin-bottom: 1rem;
 				border-right: none;

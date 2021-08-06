@@ -2,7 +2,7 @@
   <div class="container">
     <h2 class="ukm-name">
       <a href="<?= base_url('ukm'); ?>">
-        <i class="fas fa-fw fa-lg fa-arrow-circle-left scrollToTop"></i>
+        <i class="fas fa-fw fa-lg fa-arrow-circle-left"></i>
       </a>
       <?= $detail['ukm_name']; ?>
     </h2>

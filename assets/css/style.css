@@ -1231,7 +1231,7 @@
   font-size: 1.25rem;
   text-align: center;
   padding: 0.75rem 0;
-  width: 450px;
+  width: 300px;
   max-width: 100%;
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -1471,6 +1471,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #info-page .info-body {
+    border-radius: 4rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #event-header .event-sub {
     height: 300px;
@@ -1506,6 +1512,9 @@
     padding: 1rem;
     min-height: 275px;
   }
+  #elaborasi .schedule-card-body {
+    min-height: 270px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1529,8 +1538,17 @@
     position: relative;
     bottom: 0;
   }
+  #elaborasi .schedule-card-body {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding-bottom: 5rem;
+  }
   #event-info .info-body {
     padding: 2rem 1rem;
+  }
+  #info-page .info-body {
+    border-radius: 2rem;
   }
 }
 
@@ -1720,6 +1738,16 @@
 
 #mascot-content .mascot-definition .component-name {
   font-family: "Nunito", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(2.25rem * 2);
   color: #e8482b;
   text-align: center;
   font-size: 2.25rem;
@@ -1731,9 +1759,25 @@
   width: 350px;
   max-width: 100%;
   font-size: 1.25rem;
+  height: calc(1.25rem * 2);
   font-weight: 600;
   font-family: "Nunito", sans-serif;
   text-align: center;
+}
+
+#mascot-content .mascot-definition .fas {
+  color: white;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+#mascot-content .mascot-definition .fas:hover {
+  color: #f8aa19;
+}
+
+#mascot-content .mascot-definition .fas:active {
+  color: #ea4e6e;
 }
 
 @media screen and (max-width: 992px) {
@@ -1750,11 +1794,15 @@
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 0;
+    height: 280px;
   }
   #mascot-content .mascot-definition {
     border-top-right-radius: 0;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+  }
+  #mascot-content .mascot-definition .component-desc {
+    height: 77px;
   }
 }
 
@@ -1766,6 +1814,13 @@
     margin-top: 2rem;
     width: 475px;
     max-width: 100%;
+  }
+  #mascot-header .mascot-box .mascot-palette span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 0.25rem;
+    border-radius: 50%;
   }
   #mascot-header .mascot-box .mascot-character:first-of-type {
     margin-bottom: 1rem;
@@ -2687,6 +2742,9 @@ footer .footer-contact .contact-link .contact-logo i {
     font-size: 2rem;
     line-height: 80px;
   }
+  #logo .logo-instruction {
+    height: calc(1.25rem * 4.5);
+  }
   #mascot .mascot-header .mascot-title {
     font-size: 2rem;
   }
@@ -2792,6 +2850,9 @@ footer .footer-contact .contact-link .contact-logo i {
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
+  #logo .logo-instruction {
+    height: calc(1.25rem * 6.5);
+  }
   #mascot .mascot-content {
     padding: 2rem;
   }
@@ -2815,6 +2876,19 @@ footer .footer-contact .contact-link .contact-logo i {
   footer .footer-sponsor img {
     width: 80px;
     margin: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  #logo {
+    padding: 0 1rem;
+  }
+  #logo .logo-meaning p {
+    text-align: center;
+    padding: 0.5rem 1.15rem;
+  }
+  #logo .logo-meaning p::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

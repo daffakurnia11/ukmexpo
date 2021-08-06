@@ -3,7 +3,7 @@
   <div class="container categories">
     <div class="row">
       <div class="col-lg-3 col-6">
-        <div class="categories-card text-center">
+        <div class="categories-card text-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="categories-illustration">
             <img src="<?= base_url('assets/img/'); ?>illustration/sport.svg" alt="">
           </div>
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-6">
-        <div class="categories-card text-center">
+        <div class="categories-card text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
           <div class="categories-illustration">
             <img src="<?= base_url('assets/img/'); ?>illustration/other.svg" alt="">
           </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-6">
-        <div class="categories-card text-center">
+        <div class="categories-card text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="categories-illustration">
             <img src="<?= base_url('assets/img/'); ?>illustration/art.svg" alt="">
           </div>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-6">
-        <div class="categories-card text-center">
+        <div class="categories-card text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
           <div class="categories-illustration">
             <img src="<?= base_url('assets/img/'); ?>illustration/defense.svg" class="mt-auto" alt="">
           </div>
@@ -59,7 +59,6 @@
       Olahraga
     </h3>
     <div class="row justify-content-center">
-
       <?php foreach ($olahraga as $data) : ?>
         <div class="col-lg-3 col-md-4 col-6">
           <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">

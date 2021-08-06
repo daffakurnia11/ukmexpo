@@ -642,6 +642,13 @@ footer {
 			}
 		}
 	}
+	#logo {
+		.logo {
+			&-instruction {
+				height: calc(1.25rem * 4.5);
+			}
+		}
+	}
 	#mascot {
 		.mascot-header {
 			.mascot-title {
@@ -759,6 +766,9 @@ footer {
 				font-size: 1.5rem;
 				padding: 1rem 2rem;
 			}
+			&-instruction {
+				height: calc(1.25rem * 6.5);
+			}
 		}
 	}
 	#mascot {
@@ -790,6 +800,23 @@ footer {
 			img {
 				width: 80px;
 				margin: 0.25rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 378px) {
+	#logo {
+		padding: 0 1rem;
+		.logo {
+			&-meaning {
+				p {
+					text-align: center;
+					padding: 0.5rem 1.15rem;
+					&::before {
+						display: none;
+					}
+				}
 			}
 		}
 	}

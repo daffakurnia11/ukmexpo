@@ -75,25 +75,25 @@
     </div>
     <div class="row">
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="30">
           <h3>Olahraga?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/sport-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="30">
           <h3>Seni?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/art-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500" data-aos-offset="30">
           <h3>Bela Diri?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/defense-division.svg" class="bg-division" alt="">
         </div>
       </div>
       <div class="col-sm-6 col-xl-3">
-        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="division text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000" data-aos-offset="30">
           <h3>Bidang Khusus?</h3>
           <img src="<?= base_url('assets/img/'); ?>svg/other-division.svg" class="bg-division" alt="">
         </div>
