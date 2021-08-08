@@ -113,3 +113,35 @@ $("#mascot-interaction").on('click', function () {
   $(".component-desc").html(mascotDesc[imgIndex - 1]);
   $(".component-name").html(mascotTitle[imgIndex - 1]);
 });
+
+// COUNTDOWN TIMER
+var countDownDate = new Date("Aug 28, 2021 23:59:59").getTime();
+
+var x = setInterval(function () {
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var sec = Math.floor((distance % (1000 * 60)) / 1000);
+
+  function digit(n) {
+    return n < 10 ? "0" + n : "" + n;
+  }
+
+  document.querySelector(".days").innerHTML = digit(days);
+  document.querySelector(".hours").innerHTML = digit(hour);
+  document.querySelector(".mins").innerHTML = digit(min);
+  document.querySelector(".secs").innerHTML = digit(sec);
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".countdown-title").innerHTML = 'Regular Registration Ditutup'
+    document.querySelector(".days").innerHTML = '00';
+    document.querySelector(".hours").innerHTML = '00';
+    document.querySelector(".mins").innerHTML = '00';
+    document.querySelector(".secs").innerHTML = '00';
+  }
+}, 1000);

@@ -10,6 +10,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 .pink-button {
   background-color: #fee4e3;
   border-radius: 2rem;
@@ -1838,6 +1840,598 @@
   #mascot-content .mascot-definition {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+.pink-button {
+  background-color: #fee4e3;
+  border-radius: 2rem;
+  padding: 0.5rem 1.25rem;
+  color: #6e35c3;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pink-button:hover {
+  color: #6e35c3;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.purple-button {
+  width: 190px;
+  background-color: #6e35c3;
+  border-radius: 2rem;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.purple-button:hover {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pink-button {
+  width: 150px;
+  background-color: #b988a1;
+  border-radius: 2rem;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pink-button:hover {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#merchandise-body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6d529a), to(#f4b2a7));
+  background: linear-gradient(to bottom, #6d529a, #f4b2a7);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#merchandise-page {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#merchandise-page img.event-flower {
+  position: absolute;
+  z-index: -2;
+}
+
+#merchandise-page img.event-flower:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  width: 600px;
+  max-width: 100%;
+}
+
+#merchandise-page img.event-flower:nth-of-type(2) {
+  top: -200px;
+  right: -150px;
+  width: 450px;
+  max-width: 100%;
+}
+
+#merchandise-page img.event-star-bg {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 60%;
+  right: 120px;
+}
+
+#merchandise-page img.merchandise-speaker {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+#merchandise-page .merchandise-header {
+  position: relative;
+  margin: 1rem auto 2rem;
+  width: 460px;
+  max-width: 100%;
+}
+
+#merchandise-page .merchandise-header img.event-star-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+#merchandise-page .merchandise-header img.event-star-bg:nth-of-type(1) {
+  top: 0;
+  right: 75px;
+  width: 75px;
+}
+
+#merchandise-page .merchandise-header img.event-star-bg:nth-of-type(2) {
+  top: 40px;
+  right: 50px;
+  width: 45px;
+}
+
+#merchandise-page .merchandise-brand {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  border: 1px solid #f4b2a7;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.25rem 1.25rem;
+  color: #f4b2a7;
+}
+
+#merchandise-page .merchandise-title {
+  margin-top: 1.25rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#merchandise-page .pre-order-text {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #f4b2a7;
+  border-radius: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  color: #f4b2a7;
+  text-transform: uppercase;
+}
+
+#merchandise-page .pre-order-desc {
+  margin: 1.5rem auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#merchandise-page .pre-order .timebox {
+  margin: 0 0.5rem 3rem;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #f4b2a7;
+  border-radius: 1rem;
+}
+
+#merchandise-page .pre-order .timebox-number {
+  font-family: "Nunito", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+}
+
+#merchandise-page .pre-order .timebox-name {
+  margin: 0;
+  margin-top: -0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#merchandise-page .pre-order-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: -webkit-gradient(linear, left top, right top, from(#f4b2a7), to(#a0779f));
+  background: linear-gradient(to right, #f4b2a7, #a0779f);
+  border: 1px solid #f4b2a7;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.75rem 1.75rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto 3rem;
+  position: relative;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-title::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(135deg, rgba(253, 212, 202, 0.38), rgba(255, 255, 255, 0.13));
+  border-radius: 1rem;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#merchandise-bundle {
+  color: white;
+}
+
+#merchandise-bundle .bundle-category {
+  margin: 0 auto 1.5rem;
+  width: 250px;
+  max-width: 100%;
+  border: 1px solid #f4b2a7;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#merchandise-bundle .bundle-category:not(.collapsed) {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+}
+
+#merchandise-bundle .bundle-detail {
+  padding: 1rem;
+  border: 1px solid #f4b2a7;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  height: 560px;
+}
+
+#merchandise-bundle .bundle-detail .bundle-name {
+  border: 1px solid #f4b2a7;
+  border-radius: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f4b2a7), to(#6d529a));
+  background: linear-gradient(to right, #f4b2a7, #6d529a);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+#merchandise-bundle .bundle-detail .bundle-content {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100%;
+}
+
+#merchandise-bundle .bundle-detail .bundle-item {
+  margin: 1.5rem 0 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+#merchandise-bundle .bundle-detail .bundle-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0.25rem auto 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+#merchandise-bundle .bundle-detail .bundle-choice {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  padding-left: 1.35rem;
+  position: relative;
+}
+
+#merchandise-bundle .bundle-detail .bundle-choice::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+#merchandise-bundle .bundle-detail .bundle-price {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+#merchandise-catalog {
+  color: white;
+}
+
+#merchandise-catalog .category-name {
+  margin: 1rem auto;
+  padding: 0.5rem 0;
+  border: 1px solid #6d529a;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  width: 250px;
+  max-width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.07em;
+  text-align: center;
+  cursor: pointer;
+}
+
+#merchandise-catalog a.category-name {
+  display: block;
+}
+
+#merchandise-catalog .product-catalog {
+  margin: 1rem auto;
+  padding: 2.5rem 1.5rem 1rem;
+  width: 310px;
+  max-width: 100%;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  position: relative;
+}
+
+#merchandise-catalog .product-catalog::before {
+  position: absolute;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  overflow: hidden;
+  background: -webkit-gradient(linear, right top, left top, from(#a764fe), to(#fbd1ca));
+  background: linear-gradient(to left, #a764fe 0%, #fbd1ca 100%);
+}
+
+#merchandise-catalog .product-image {
+  margin: 1rem auto;
+  width: 250px;
+  max-width: 100%;
+  height: 250px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#merchandise-catalog .product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+#merchandise-catalog .product-image-code {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #f4b2a7;
+}
+
+#merchandise-catalog .product-name {
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #6d529a;
+  text-align: center;
+  margin: 1rem auto 0.5rem;
+}
+
+#merchandise-catalog .product-price {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: black;
+  text-align: center;
+}
+
+#merchandise-catalog .product .detail-button {
+  margin: 0.5rem auto;
+  padding: 0.5rem 1.75rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #f4b2a7;
+  border-radius: 1.5rem;
+  background: linear-gradient(95.83deg, #fbd1ca 0%, #a663ff 100.24%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  #merchandise-page .merchandise-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #merchandise-page img.event-star-bg {
+    top: 60%;
+    right: 75px;
+  }
+  #merchandise-bundle .bundle-detail {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #merchandise-page .merchandise-header {
+    width: 400px;
+  }
+  #merchandise-page img.event-flower:nth-of-type(1) {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #merchandise-page img.event-flower:nth-of-type(2) {
+    display: none;
+  }
+  #merchandise-page img.event-star-bg {
+    top: 50%;
+    right: 45px;
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #merchandise-page img.merchandise-speaker {
+    display: none;
+  }
+  #merchandise-bundle .bundle-detail {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem 1.75rem;
+    margin: 0 auto;
+  }
+  #merchandise-bundle .bundle-detail .bundle-content {
+    width: 250px;
+  }
+  #merchandise-bundle .bundle-detail .bundle-price {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #merchandise-page .merchandise-title {
+    font-size: 2.25rem;
+  }
+  #merchandise-page .merchandise-header {
+    width: 270px;
+  }
+  #merchandise-page .merchandise-header img.event-star-bg:nth-of-type(1) {
+    right: 25px;
+    width: 45px;
+  }
+  #merchandise-page .merchandise-header img.event-star-bg:nth-of-type(2) {
+    top: 25px;
+    right: 10px;
+    width: 25px;
+  }
+  #merchandise-page .pre-order-text {
+    font-size: 1.5rem;
+  }
+  #merchandise-page .pre-order-desc {
+    font-size: 1.15rem;
+  }
+  #merchandise-page .pre-order .timebox {
+    width: 75px;
+    height: 75px;
+  }
+  #merchandise-page .pre-order .timebox-number {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 

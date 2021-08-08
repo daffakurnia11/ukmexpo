@@ -59,5 +59,11 @@ $route['event']  = 'event';
 $route['elaborasi']  = 'event/elaborasi';
 $route['info']  = 'main/info';
 $route['maskot']  = 'main/maskot';
+$route['merchandise']  = 'main/merchandise';
+
+$route['admin']  = 'admin';
+$route['shorten']  = 'shorten';
 
 $route['soon'] = 'state/comingsoon';
+// INI BUAT SHORTEN LINK. Kalo masih kena route nya tambah route sendiri.
+$route['(:any)'] = 'shorten/direct/$1';

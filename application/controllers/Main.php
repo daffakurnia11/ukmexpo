@@ -84,4 +84,16 @@ class Main extends CI_Controller
 		$this->load->view('main/mascot');
 		$this->load->view('main/templates/footer');
 	}
+
+	public function merchandise()
+	{
+		$data = [
+			'body'					=> 'merchandise-body',
+			'navbar'				=> 'Merchandise',
+		];
+		$this->load->view('main/templates/header', $data);
+		$this->load->view('main/templates/navbar');
+		$this->load->view('main/merchandise');
+		$this->load->view('main/templates/footer');
+	}
 }
