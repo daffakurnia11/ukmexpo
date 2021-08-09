@@ -61,7 +61,7 @@
     <div class="row justify-content-center">
       <?php foreach ($olahraga as $data) : ?>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
+          <a href="<?= base_url('ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
               <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/Olahraga/<?= $data['logo']; ?>" alt="">
             </div>
@@ -84,7 +84,7 @@
 
       <?php foreach ($bidangkhusus as $data) : ?>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
+          <a href="<?= base_url('ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
               <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/BidangKhusus/<?= $data['logo']; ?>" alt="">
             </div>
@@ -107,7 +107,7 @@
 
       <?php foreach ($seni as $data) : ?>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
+          <a href="<?= base_url('ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
               <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/Seni/<?= $data['logo']; ?>" alt="">
             </div>
@@ -130,7 +130,7 @@
 
       <?php foreach ($beladiri as $data) : ?>
         <div class="col-md-4 col-6">
-          <a href="<?= base_url('main/detail_ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
+          <a href="<?= base_url('ukm/' . $data['slug']); ?>" class="ukm-item mx-auto">
             <div class="ukm-item-logo">
               <img src="<?= base_url('assets/img/'); ?>logo/ukm_logo/BelaDiri/<?= $data['logo']; ?>" alt="">
             </div>

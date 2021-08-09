@@ -15,7 +15,7 @@ class Main extends CI_Controller
 		$this->load->view('main/templates/footer');
 	}
 
-	public function ukm()
+	public function daftarUKM()
 	{
 		$data = [
 			'body'					=> 'main-ukm',
@@ -32,7 +32,7 @@ class Main extends CI_Controller
 		$this->load->view('main/templates/footer');
 	}
 
-	public function detail_ukm($slug)
+	public function ukm($slug)
 	{
 		$ukm = $this->db->get_where('ukm_list', ['slug' => $slug])->row_array();
 

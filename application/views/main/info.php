@@ -34,11 +34,11 @@
       <div class="info-content">
         <ul class="info-desc">
           <li>Peserta dapat mengunjungi website UKM EXPO.</li>
-          <li>Peserta dapat membuka laman <a href="<?= base_url('ukm'); ?>">UKM</a> pada website.</li>
+          <li>Peserta dapat membuka laman <a href="<?= base_url('daftarUKM'); ?>">UKM</a> pada website.</li>
           <li>Peserta diarahkan untuk memilih opsi salah satu dari 4 bidang UKM kemudian memilih salah satu UKM dari bidang UKM tersebut sesuai yang diminati.</li>
           <li>Pendaftaran dilakukan dengan menekan button “Mendaftar” dan mengisi link pendaftaran UKM yang dipilih</li>
         </ul>
-        <a href="<?= base_url('ukm'); ?>" class="info-button text-center">
+        <a href="<?= base_url('daftarUKM'); ?>" class="info-button text-center">
           UKM
         </a>
         <div class="info-notes">

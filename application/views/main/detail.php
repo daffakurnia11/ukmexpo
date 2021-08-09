@@ -1,7 +1,7 @@
 <article id="ukm-content">
   <div class="container">
     <h2 class="ukm-name">
-      <a href="<?= base_url('ukm'); ?>">
+      <a href="<?= base_url('daftarUKM'); ?>">
         <i class="fas fa-fw fa-lg fa-arrow-circle-left"></i>
       </a>
       <?= $detail['ukm_name']; ?>

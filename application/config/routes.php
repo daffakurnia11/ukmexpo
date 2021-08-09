@@ -54,7 +54,8 @@ $route['404_override'] = 'state/not_found';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['main']  = 'main';
-$route['ukm']  = 'main/ukm';
+$route['daftarUKM']  = 'main/daftarUKM';
+$route['ukm/(:any)']  = 'main/ukm/$1';
 $route['event']  = 'event';
 $route['elaborasi']  = 'event/elaborasi';
 $route['info']  = 'main/info';
