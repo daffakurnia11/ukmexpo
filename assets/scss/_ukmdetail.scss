@@ -85,18 +85,18 @@
 			$border-radius: 1.5rem;
 			margin-top: 0.5rem;
 			border-radius: $border-radius;
-			background-color: #e3e5e756;
+			background-color: $gradient-transparent;
 			border: none;
 			.accordion-button {
 				font-size: 0.8rem;
 				border: none;
-				background-color: $primary-white;
+				background-color: $primary-purple;
 				border-radius: $border-radius;
-				color: $primary-purple;
+				color: $primary-white;
 			}
 			.accordion-body {
 				font-size: 0.8rem;
-				color: $primary-white;
+				color: $primary-purple;
 			}
 		}
 	}

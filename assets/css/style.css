@@ -848,21 +848,21 @@
 #ukm-content .detail .accordion-item {
   margin-top: 0.5rem;
   border-radius: 1.5rem;
-  background-color: #e3e5e756;
+  background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
   border: none;
 }
 
 #ukm-content .detail .accordion-item .accordion-button {
   font-size: 0.8rem;
   border: none;
-  background-color: white;
+  background-color: #6e35c3;
   border-radius: 1.5rem;
-  color: #6e35c3;
+  color: white;
 }
 
 #ukm-content .detail .accordion-item .accordion-body {
   font-size: 0.8rem;
-  color: white;
+  color: #6e35c3;
 }
 
 @media screen and (max-width: 768px) {

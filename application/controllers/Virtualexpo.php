@@ -63,8 +63,8 @@ class Virtualexpo extends CI_Controller
     if (!$this->session->userdata('name') && !$this->session->userdata('type')) {
       redirect('virtualexpo');
     }
-    redirect('soon');
-    die;
+    // redirect('soon');
+    // die;
     $this->load->view('virtualexpo/index');
   }
 
