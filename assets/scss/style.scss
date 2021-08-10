@@ -495,8 +495,11 @@ footer {
 		background: linear-gradient(to right, transparent 20%, #ffb9a8);
 		border-radius: 3rem;
 		margin-bottom: 3rem;
+		width: 100%;
 		img {
 			margin-right: 0.25rem;
+			max-width: 100%;
+			max-height: 100%;
 		}
 	}
 	.footer-contact {

@@ -61,6 +61,7 @@ $route['elaborasi']  = 'event/elaborasi';
 $route['info']  = 'main/info';
 $route['maskot']  = 'main/maskot';
 $route['merchandise']  = 'main/merchandise';
+$route['virtualexpo']  = 'virtualexpo';
 
 $route['admin']  = 'admin';
 $route['shorten']  = 'shorten';

@@ -31,6 +31,8 @@ $(document).ready(function () {
     autoplay: true,
     center: true,
     items: 1,
+    autoHeight: true,
+    autoWidth: true,
     autoplayTimeout: 2000,
     autoplaySpeed: 2000,
   })
@@ -61,16 +63,12 @@ $(document).ready(function () {
   })
 
   // VIRTUAL EXPO REGISTRATION BUTTON TRIGGER
-  $('#mahasiswaButton').on('click', function () {
-    $('.virtualexpo-category').removeClass('active');
-    $(this).addClass('active');
+  $('.mahasiswaButton').on('click', function () {
 
     $('.virtualexpo-form').css('display', 'none');
     $('#mahasiswaCategory').css('display', 'block');
   });
-  $('#umumButton').on('click', function () {
-    $('.virtualexpo-category').removeClass('active');
-    $(this).addClass('active');
+  $('.umumButton').on('click', function () {
 
     $('.virtualexpo-form').css('display', 'none');
     $('#umumCategory').css('display', 'block');

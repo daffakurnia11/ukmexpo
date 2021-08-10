@@ -12,10 +12,7 @@
       </div>
       <div class="col-md-6 event-sub" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <h2 class="event-subtitle">Virtual Expo</h2>
-        <!-- <a href="<?= base_url('virtualexpo'); ?>" class="event-play text-center">
-          <i class="fas fa-2x fa-play"></i>
-        </a> -->
-        <a href="<?= base_url('soon'); ?>" class="event-play text-center">
+        <a href="<?= base_url('virtualexpo'); ?>" class="event-play text-center">
           <i class="fas fa-2x fa-play"></i>
         </a>
         <img src="<?= base_url('assets/img/'); ?>svg/event-flower.png" class="event-flower" alt="" data-aos="fade" data-aos-duration="1000" data-aos-delay="1000">

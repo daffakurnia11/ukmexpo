@@ -1396,17 +1396,18 @@
   width: 250px;
   max-width: 100%;
   margin: 0.5rem auto;
+  cursor: pointer;
 }
 
 .virtualexpo-regis .virtualexpo-category.active {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
 }
 
-.virtualexpo-regis .virtualexpo-form {
+.virtualexpo-regis .form-content {
   height: 200px;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input {
+.virtualexpo-regis .form-content .virtualexpo-input {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
@@ -1417,23 +1418,23 @@
   margin: 0.75rem 0;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input::-webkit-input-placeholder {
+.virtualexpo-regis .form-content .virtualexpo-input::-webkit-input-placeholder {
   color: #ffd0c6;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input:-ms-input-placeholder {
+.virtualexpo-regis .form-content .virtualexpo-input:-ms-input-placeholder {
   color: #ffd0c6;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input::-ms-input-placeholder {
+.virtualexpo-regis .form-content .virtualexpo-input::-ms-input-placeholder {
   color: #ffd0c6;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input::placeholder {
+.virtualexpo-regis .form-content .virtualexpo-input::placeholder {
   color: #ffd0c6;
 }
 
-.virtualexpo-regis .virtualexpo-form .virtualexpo-input:focus {
+.virtualexpo-regis .form-content .virtualexpo-input:focus {
   outline: none !important;
 }
 
@@ -3195,10 +3196,13 @@ footer .footer-sponsor {
   background: linear-gradient(to right, transparent 20%, #ffb9a8);
   border-radius: 3rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 footer .footer-sponsor img {
   margin-right: 0.25rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 footer .footer-contact .contact-title {

@@ -178,18 +178,11 @@
             <span>2019</span>
           </h3>
           <div class="owl-carousel photo-carousel owl-theme mt-3">
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
+            <?php for ($i = 1; $i <= 6; $i++) : ?>
+              <div class="item">
+                <img src="<?= base_url('assets/img/retrospeksi/2019_') . $i . '.jpg'; ?>" class="w-100" alt="">
+              </div>
+            <?php endfor; ?>
           </div>
         </div>
         <div class="retrospeksi-content my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
@@ -204,18 +197,11 @@
             <span>2020</span>
           </h3>
           <div class="owl-carousel photo-carousel owl-theme mt-3">
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
-            <div class="item">
-              <img src="<?= base_url('assets/img/'); ?>photo.jpg" class="w-100" alt="">
-            </div>
+            <?php for ($i = 1; $i <= 6; $i++) : ?>
+              <div class="item">
+                <img src="<?= base_url('assets/img/retrospeksi/2020_') . $i . '.jpg'; ?>" class="w-100" alt="">
+              </div>
+            <?php endfor; ?>
           </div>
         </div>
       </div>

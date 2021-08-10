@@ -355,11 +355,12 @@
 		width: 250px;
 		max-width: 100%;
 		margin: 0.5rem auto;
+		cursor: pointer;
 		&.active {
 			background: $gradient-transparent;
 		}
 	}
-	.virtualexpo-form {
+	.form-content {
 		height: 200px;
 		.virtualexpo-input {
 			border: none;

@@ -50,6 +50,27 @@
   <!-- Divider -->
   <hr class="sidebar-divider">
 
+  <!-- Virtual Expo -->
+  <div class="sidebar-heading">
+    Virtual Expo
+  </div>
+
+  <li class="nav-item <?= $title == 'Pengunjung Mahasiswa' ? 'active' : ''; ?>">
+    <a class="nav-link" href="<?= base_url('virtualexpo/guest?type=Mahasiswa'); ?>">
+      <i class="fas fa-fw fa-users"></i>
+      <span>Pengunjung Mahasiswa</span>
+    </a>
+  </li>
+  <li class="nav-item <?= $title == 'Pengunjung Umum' ? 'active' : ''; ?>">
+    <a class="nav-link" href="<?= base_url('virtualexpo/guest?type=Umum'); ?>">
+      <i class="fas fa-fw fa-users"></i>
+      <span>Pengunjung Umum</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
   <li class="nav-item">
     <a class="nav-link" href="" data-toggle="modal" data-target="#logoutModal">
       <i class="fas fa-fw fa-sign-out-alt"></i>
