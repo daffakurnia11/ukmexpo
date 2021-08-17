@@ -491,7 +491,7 @@ button {
 
 footer {
 	color: $primary-white;
-	.footer-sponsor {
+	.footer-support {
 		background: linear-gradient(to right, transparent 20%, #ffb9a8);
 		border-radius: 3rem;
 		margin-bottom: 3rem;
@@ -538,6 +538,9 @@ footer {
 					color: #fab4a9;
 				}
 			}
+		}
+		.footer-sponsor {
+			width: 100%;
 		}
 	}
 }
